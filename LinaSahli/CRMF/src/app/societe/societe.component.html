@@ -1,0 +1,115 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<div class="container">
+  <div class="row">
+    <div id="custom-search-input">
+      <div class="input-group col-md-12" style="text-align: center">
+        <input type="text" class="search-query form-control" placeholder="Search With Email Address"  name="email" [(ngModel)]="email"/>
+        <span class="input-group-btn">
+                                        <button class="btn btn-danger" type="button" (click)="findUserByEmailId()">
+                                            <span class=" glyphicon glyphicon-search"></span>
+                                        </button>
+                                    </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <form>
+        <fieldset>
+          <legend class="text-center">Valid information is required to register. <span class="req"><small>
+                                required *</small></span></legend>
+
+          <div class="form-group">
+            <label for="Name"><span class="req">* </span> adresse: <small>This will be your login user
+              name</small> </label>
+            <input required type="text" [(ngModel)]="Societe.adresse" name="adresse" id="adresse"
+                   class="form-control phone" maxlength="28" placeholder="Enter your fullname..." />
+          </div>
+
+          <div class="form-group">
+            <label for="prenom"><span class="req">* </span> emailSociete: </label>
+            <input class="form-control" type="text" [(ngModel)]="Societe.emailSociete" name="emailSociete" id="txt" required
+                   placeholder="Enter valid email address" />
+            <div id="errFirst"></div>
+          </div>
+
+
+          <div class="form-group">
+            <label for="mobile"><span class="req">* </span> telephone : </label>
+            <input class="form-control" type="text" [(ngModel)]="Societe.telephone" name="telephone" id="txt"
+                   placeholder="Total year of experience" required />
+            <div id="errLast"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="fix"><span class="req">* </span> fax : </label>
+            <input class="form-control" type="text" [(ngModel)]="Societe.fax" name="fax" id="txt"
+                   placeholder="Total year of experience" required />
+            <div id="errLast"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="pays"><span class="req">* </span> raisonsocial : </label>
+            <input class="form-control" type="text" [(ngModel)]="Societe.raisonsocial" name="raisonsocial" id="txt"
+                   placeholder="Total year of experience" required />
+            <div id="errLast"></div>
+          </div>
+
+          <div class="form-group">
+            <input class="btn btn-success" type="submit" name="submit_reg" value="Register" (click)="ajouterSociete()">
+          </div>
+        </fieldset>
+      </form><!-- ends register form -->
+      <!-- second for to fiter user-->
+    </div><!-- ends col-6 -->
+
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="container">
+    <div class="row col-md-6 col-md-offset-2 custyle">
+      <table class="table table-striped custab">
+        <thead>
+        <tr>
+          <th>adresse</th>
+          <th>emailSociete</th>
+          <th>telephone</th>
+          <th>fax</th>
+          <th>raisonsocial</th>
+        </tr>
+        </thead>
+        <tbody>
+
+
+        <tr *ngFor="let Societe of Society">
+          <td>{{Societe.adresse}}</td>
+          <td>{{Societe.emailSociete}}</td>
+          <td>{{Societe.telephone}}</td>
+          <td>{{Societe.fax}}</td>
+          <td>{{Societe.raisonsocial}}</td>
+
+
+          <td class="text-center"><button class="btn btn-danger btn-xs" (click)="deleteSoc(Societe.id)"><span class="glyphicon glyphicon-remove"></span> Delete</button></td>
+          <td class="text-center"><button class="btn btn-danger btn-xs" (click)="update()"><span class="glyphicon glyphicon-remove"></span> Update</button></td>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
