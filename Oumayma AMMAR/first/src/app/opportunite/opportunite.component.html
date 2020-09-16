@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <body>
+    <div class="container-scroller">
+      <!-- partial:partials/_navbar.html -->
+      
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+        
+        <!-- partial -->
+       
+          <div class="content-wrapper">
+           
+            
+            
+            <!-- Quick Action Toolbar Ends-->
+         
+            <div class="row">
+              <div class="col-md-12 grid-margin stretch-card">
+                
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-sm-flex align-items-center mb-4">
+
+                      <h4 class="card-title mb-sm-0">opportunity</h4>
+                      <a href="#" class="text-dark ml-auto mb-3 mb-sm-0"> View all opportunities</a>
+                    </div>
+                    <div class="table-responsive border rounded p-1">
+                      <table class="table">
+                       
+                       <thead>
+                        <tr>
+                         <th>Id</th>
+                         <th>Titre</th>
+                        <th>Montant</th>
+                         <th>Devises</th>
+                        <th>business line</th>
+                        <th>Date date prévisionnelle de closing</th>
+                        <th>Date D'identification</th>
+                
+
+            </tr>
+         </thead>
+         <tbody>
+            <tr *ngFor="let opportunite of opportunite">
+                <td>{{opportunite.id}}</td>
+                <td>{{opportunite.titre}}</td>
+                <td>{{opportunite.montantopportunite}}</td>
+                <td>{{opportunite.devises.devises}}</td>
+                <td>{{opportunite.busunessline.businessline}}</td>
+                <td>{{opportunite.dateidop|date}}</td>
+                <td>{{opportunite.dateclose|date}}</td>
+
+              </tr>
+         </tbody>
+                      </table>
+                    </div>
+                    <div class="d-flex mt-4 flex-wrap">
+                      <p class="text-muted">Showing 1 to 10 of 57 entries</p>
+                      <nav class="ml-auto">
+                        <ul class="pagination separated pagination-info">
+                          <li class="page-item"><a href="#" class="page-link"><i class="icon-arrow-left"></i></a></li>
+                          <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                          <li class="page-item"><a href="#" class="page-link">2</a></li>
+                          <li class="page-item"><a href="#" class="page-link">3</a></li>
+                          <li class="page-item"><a href="#" class="page-link">4</a></li>
+                          <li class="page-item"><a href="#" class="page-link"><i class="icon-arrow-right"></i></a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+          
+          <!-- partial -->
+        
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="/assets/template/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="/assets/template/vendors/chart.js/Chart.min.js"></script>
+    <script src="/assets/template/vendors/moment/moment.min.js"></script>
+    <script src="/assets/template/vendors/daterangepicker/daterangepicker.js"></script>
+    <script src="/assets/template/vendors/chartist/chartist.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="/assets/template/js/off-canvas.js"></script>
+    <script src="/assets/template/js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="/assets/template/js/dashboard.js"></script>
+    <!-- End custom js for this page -->
+  </body>
+</html>

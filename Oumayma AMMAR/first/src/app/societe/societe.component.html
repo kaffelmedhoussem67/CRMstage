@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <body>
+    <div class="container-scroller">
+      <!-- partial:partials/_navbar.html -->
+     
+
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+
+
+        
+        <!-- partial -->
+        
+          <div class="content-wrapper">
+
+
+
+            <div class="col-12 grid-margin">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Ajouter Societe</h4>
+                 
+                  <form class="form-sample" #userForm="ngForm" (ngSubmit)="onSubmit()">
+                    <p class="card-description"> Information personnel </p>
+                    <div class="row">
+
+
+                      <div class="col-md-6">
+                        <div class="form-group row" [class.has-error]="raisonsocial.invalid && raisonsocial.touched"
+                                                    [class.has-success]="raisonsocial.valid " >
+
+                          <label class="col-sm-3 col-form-label">Raison Social</label>
+                          <div class="col-sm-9">
+
+                            <input type="text" [(ngModel)]="societe.raisonsocial"   required name="raisonsocial"   class="form-control" #raisonsocial="ngModel" />
+                            <span class="help-block" class="card-description" *ngIf="raisonsocial.invalid && raisonsocial.touched"><code>Raison Social is required</code></span>
+                          </div>
+                        </div>
+
+
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row" [class.has-error]="email.invalid && email.touched">
+                          <label class="col-sm-3 col-form-label"  >Email </label>
+                          <div class="col-sm-9">
+                            <input type="text" [(ngModel)]="societe.emailSociete" required email name="email" class="form-control"  #email="ngModel" />
+   
+                            
+                              <span class="help-block" class="card-description" *ngIf="email.errors?.required && email.touched"><code>Email is required</code></span>
+                              <span class="help-block"  class="card-description" *ngIf="email.errors?.email && email.touched"><code>Email must be a valid email address</code></span>
+                          
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Groupe de societe</label>
+                          <div class="col-sm-9">
+                            <select  [(ngModel)]="societe.grpsociete" name="grpsociete" class="form-control" >
+                              <option *ngFor="let grpsoc of groupesociete" value="{{grpsoc .id}}" >
+                                {{ grpsoc .grpsociete }}
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Statut</label>
+                          <div class="col-sm-9">
+                            <select class="form-control" [(ngModel)]="societe.statut" name="statut">
+                              <option *ngFor="let s of statuts" value="{{s.id}}" >
+                                   {{s.statut}}
+                              </option>
+                              
+                              
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <p class="card-description"> Address </p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Address </label>
+                          <div class="col-sm-9">
+                            <input type="text"  [(ngModel)]="societe.adresse" name="address" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Telephone</label>
+                          <div class="col-sm-9">
+                            <input type="text" [(ngModel)]="societe.telephone" name="telephone" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Pays</label>
+                          <div class="col-sm-9">
+                            <select class="form-control" ngModel name="country">
+                              <option>America</option>
+                              <option>Italy</option>
+                              <option>Russia</option>
+                              <option>Britain</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Fax</label>
+                          <div class="col-sm-9">
+                            <input type="text" [(ngModel)]="societe.fax" name="fax" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+
+                   
+
+                    <button type="submit"  [disabled]="!userForm.form.valid"  class="btn btn-primary mr-2">Submit</button>
+                    <button type="reset" class="btn btn-light"  >Cancel</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h1>{{message}}</h1>
+            </div>
+
+          
+
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+         
+          <!-- partial -->
+        
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../assets/template/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../../assets/template/js/off-canvas.js"></script>
+    <script src="../../assets/template/js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <!-- End custom js for this page -->
+  </body>
+</html>
