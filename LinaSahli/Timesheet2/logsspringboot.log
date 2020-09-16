@@ -1,0 +1,1094 @@
+2020-08-31 00:30:37.320  INFO 19332 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 19332 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 00:30:38.219  INFO 19332 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 00:30:39.350  INFO 19332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 00:30:39.469  INFO 19332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106ms. Found 4 JPA repository interfaces.
+2020-08-31 00:30:40.181  INFO 19332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 00:30:40.193  INFO 19332 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 00:30:40.194  INFO 19332 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 00:30:40.416  INFO 19332 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 00:30:40.417  INFO 19332 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2007 ms
+2020-08-31 00:30:40.629  INFO 19332 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 00:30:40.693  INFO 19332 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 00:30:40.868  INFO 19332 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 00:30:40.961  INFO 19332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 00:30:41.402  INFO 19332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 00:30:41.470  INFO 19332 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 00:30:43.214  INFO 19332 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 00:30:43.221  INFO 19332 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:30:43.254  WARN 19332 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'timesheet2Application': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+2020-08-31 00:30:43.254  INFO 19332 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:30:43.256  INFO 19332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 00:30:43.265  INFO 19332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 00:30:43.267  INFO 19332 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-31 00:30:43.274  INFO 19332 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-31 00:30:43.281 ERROR 19332 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'timesheet2Application': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at tn.esprit.spring.Timesheet2Application.main(Timesheet2Application.java:37) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+	at org.springframework.util.Assert.isTrue(Assert.java:136) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.security.core.userdetails.User$UserBuilder.roles(User.java:438) ~[spring-security-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.roles(UserDetailsManagerConfigurer.java:184) ~[spring-security-config-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at tn.esprit.spring.Timesheet2Application.configureGlobal(Timesheet2Application.java:65) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_60]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:755) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 17 common frames omitted
+
+2020-08-31 00:31:10.948  INFO 17512 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 17512 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 00:31:10.950  INFO 17512 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 00:31:11.383  INFO 17512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 00:31:11.441  INFO 17512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52ms. Found 4 JPA repository interfaces.
+2020-08-31 00:31:11.828  INFO 17512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 00:31:11.840  INFO 17512 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 00:31:11.841  INFO 17512 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 00:31:12.253  INFO 17512 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 00:31:12.255  INFO 17512 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1276 ms
+2020-08-31 00:31:12.474  INFO 17512 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 00:31:12.546  INFO 17512 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 00:31:12.747  INFO 17512 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 00:31:12.922  INFO 17512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 00:31:13.264  INFO 17512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 00:31:13.287  INFO 17512 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 00:31:14.490  INFO 17512 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 00:31:14.501  INFO 17512 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:31:14.581  WARN 17512 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'timesheet2Application': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+2020-08-31 00:31:14.582  INFO 17512 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:31:14.585  INFO 17512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 00:31:14.596  INFO 17512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 00:31:14.599  INFO 17512 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-31 00:31:14.620  INFO 17512 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-31 00:31:14.635 ERROR 17512 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'timesheet2Application': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at tn.esprit.spring.Timesheet2Application.main(Timesheet2Application.java:37) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+	at org.springframework.util.Assert.isTrue(Assert.java:136) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.security.core.userdetails.User$UserBuilder.roles(User.java:438) ~[spring-security-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.roles(UserDetailsManagerConfigurer.java:184) ~[spring-security-config-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at tn.esprit.spring.Timesheet2Application.configureGlobal(Timesheet2Application.java:65) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_60]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:755) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 17 common frames omitted
+
+2020-08-31 00:32:08.772  INFO 17644 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 17644 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 00:32:08.774  INFO 17644 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 00:32:09.517  INFO 17644 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 00:32:09.633  INFO 17644 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 104ms. Found 4 JPA repository interfaces.
+2020-08-31 00:32:10.322  INFO 17644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 00:32:10.334  INFO 17644 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 00:32:10.335  INFO 17644 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 00:32:10.554  INFO 17644 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 00:32:10.554  INFO 17644 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1752 ms
+2020-08-31 00:32:10.777  INFO 17644 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 00:32:10.848  INFO 17644 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 00:32:11.028  INFO 17644 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 00:32:11.174  INFO 17644 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 00:32:11.468  INFO 17644 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 00:32:11.486  INFO 17644 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 00:32:12.466  INFO 17644 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 00:32:12.472  INFO 17644 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:32:12.505  WARN 17644 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'timesheet2Application': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+2020-08-31 00:32:12.505  INFO 17644 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:32:12.507  INFO 17644 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 00:32:12.512  INFO 17644 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 00:32:12.513  INFO 17644 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-31 00:32:12.521  INFO 17644 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-31 00:32:12.528 ERROR 17644 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'timesheet2Application': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at tn.esprit.spring.Timesheet2Application.main(Timesheet2Application.java:37) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+	at org.springframework.util.Assert.isTrue(Assert.java:136) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.security.core.userdetails.User$UserBuilder.roles(User.java:438) ~[spring-security-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.roles(UserDetailsManagerConfigurer.java:184) ~[spring-security-config-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at tn.esprit.spring.Timesheet2Application.configureGlobal(Timesheet2Application.java:65) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_60]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:755) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 17 common frames omitted
+
+2020-08-31 00:32:26.799  INFO 19104 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 19104 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 00:32:26.801  INFO 19104 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 00:32:27.296  INFO 19104 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 00:32:27.445  INFO 19104 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138ms. Found 4 JPA repository interfaces.
+2020-08-31 00:32:28.344  INFO 19104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 00:32:28.357  INFO 19104 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 00:32:28.357  INFO 19104 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 00:32:28.607  INFO 19104 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 00:32:28.608  INFO 19104 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1778 ms
+2020-08-31 00:32:28.852  INFO 19104 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 00:32:28.927  INFO 19104 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 00:32:29.196  INFO 19104 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 00:32:29.372  INFO 19104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 00:32:29.660  INFO 19292 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 19292 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 00:32:29.665  INFO 19292 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 00:32:29.772  INFO 19104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 00:32:29.794  INFO 19104 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 00:32:30.910  INFO 19292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 00:32:31.040  INFO 19292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117ms. Found 4 JPA repository interfaces.
+2020-08-31 00:32:31.318  INFO 19104 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 00:32:31.337  INFO 19104 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:32:31.424  WARN 19104 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'timesheet2Application': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+2020-08-31 00:32:31.425  INFO 19104 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:32:31.432  INFO 19104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 00:32:31.445  INFO 19104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 00:32:31.448  INFO 19104 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-31 00:32:31.468  INFO 19104 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-31 00:32:31.486 ERROR 19104 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'timesheet2Application': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at tn.esprit.spring.Timesheet2Application.main(Timesheet2Application.java:37) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+	at org.springframework.util.Assert.isTrue(Assert.java:136) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.security.core.userdetails.User$UserBuilder.roles(User.java:438) ~[spring-security-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.roles(UserDetailsManagerConfigurer.java:184) ~[spring-security-config-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at tn.esprit.spring.Timesheet2Application.configureGlobal(Timesheet2Application.java:65) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_60]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:755) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 17 common frames omitted
+
+2020-08-31 00:32:32.089  INFO 19292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 00:32:32.102  INFO 19292 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 00:32:32.103  INFO 19292 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 00:32:32.348  INFO 19292 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 00:32:32.349  INFO 19292 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2611 ms
+2020-08-31 00:32:32.584  INFO 19292 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 00:32:32.653  INFO 19292 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 00:32:32.826  INFO 19292 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 00:32:32.959  INFO 19292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 00:32:33.243  INFO 19292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 00:32:33.262  INFO 19292 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 00:32:34.184  INFO 19292 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 00:32:34.190  INFO 19292 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:32:34.223  WARN 19292 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'timesheet2Application': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+2020-08-31 00:32:34.224  INFO 19292 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:32:34.226  INFO 19292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 00:32:34.233  INFO 19292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 00:32:34.235  INFO 19292 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-31 00:32:34.243  INFO 19292 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-31 00:32:34.250 ERROR 19292 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'timesheet2Application': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at tn.esprit.spring.Timesheet2Application.main(Timesheet2Application.java:37) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+	at org.springframework.util.Assert.isTrue(Assert.java:136) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.security.core.userdetails.User$UserBuilder.roles(User.java:438) ~[spring-security-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.roles(UserDetailsManagerConfigurer.java:184) ~[spring-security-config-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at tn.esprit.spring.Timesheet2Application.configureGlobal(Timesheet2Application.java:65) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_60]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:755) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 17 common frames omitted
+
+2020-08-31 00:33:44.279  INFO 17564 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 17564 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 00:33:44.283  INFO 17564 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 00:33:45.295  INFO 17564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 00:33:45.426  INFO 17564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118ms. Found 4 JPA repository interfaces.
+2020-08-31 00:33:46.289  INFO 17564 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 00:33:46.301  INFO 17564 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 00:33:46.302  INFO 17564 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 00:33:47.693  INFO 17564 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 00:33:47.694  INFO 17564 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3343 ms
+2020-08-31 00:33:47.807  INFO 17564 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 00:33:47.840  INFO 17564 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 00:33:47.932  INFO 17564 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 00:33:48.005  INFO 17564 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 00:33:48.158  INFO 17564 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 00:33:48.168  INFO 17564 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 00:33:48.695  INFO 17564 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 00:33:48.700  INFO 17564 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:33:48.734  WARN 17564 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'timesheet2Application': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+2020-08-31 00:33:48.735  INFO 17564 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:33:48.737  INFO 17564 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 00:33:48.745  INFO 17564 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 00:33:48.746  INFO 17564 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-31 00:33:48.754  INFO 17564 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-31 00:33:48.761 ERROR 17564 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'timesheet2Application': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at tn.esprit.spring.Timesheet2Application.main(Timesheet2Application.java:37) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+	at org.springframework.util.Assert.isTrue(Assert.java:136) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.security.core.userdetails.User$UserBuilder.roles(User.java:438) ~[spring-security-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.roles(UserDetailsManagerConfigurer.java:184) ~[spring-security-config-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at tn.esprit.spring.Timesheet2Application.configureGlobal(Timesheet2Application.java:65) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_60]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:755) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 17 common frames omitted
+
+2020-08-31 00:34:30.482  INFO 17556 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 17556 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 00:34:30.486  INFO 17556 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 00:34:31.173  INFO 17556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 00:34:31.235  INFO 17556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55ms. Found 4 JPA repository interfaces.
+2020-08-31 00:34:31.755  INFO 17556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 00:34:31.762  INFO 17556 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 00:34:31.763  INFO 17556 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 00:34:31.893  INFO 17556 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 00:34:31.894  INFO 17556 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1350 ms
+2020-08-31 00:34:32.007  INFO 17556 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 00:34:32.039  INFO 17556 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 00:34:32.133  INFO 17556 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 00:34:32.202  INFO 17556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 00:34:32.345  INFO 17556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 00:34:32.354  INFO 17556 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 00:34:32.891  INFO 17556 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 00:34:33.075  INFO 17556 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:34:33.108  WARN 17556 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'timesheet2Application': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+2020-08-31 00:34:33.108  INFO 17556 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:34:33.110  INFO 17556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 00:34:33.114  INFO 17556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 00:34:33.115  INFO 17556 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-31 00:34:33.123  INFO 17556 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-31 00:34:33.132 ERROR 17556 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'timesheet2Application': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at tn.esprit.spring.Timesheet2Application.main(Timesheet2Application.java:37) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+	at org.springframework.util.Assert.isTrue(Assert.java:136) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.security.core.userdetails.User$UserBuilder.roles(User.java:438) ~[spring-security-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.roles(UserDetailsManagerConfigurer.java:184) ~[spring-security-config-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at tn.esprit.spring.Timesheet2Application.configureGlobal(Timesheet2Application.java:65) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_60]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:755) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 17 common frames omitted
+
+2020-08-31 00:35:10.276  INFO 14284 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 14284 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 00:35:10.278  INFO 14284 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 00:35:10.764  INFO 14284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 00:35:10.832  INFO 14284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62ms. Found 4 JPA repository interfaces.
+2020-08-31 00:35:11.209  INFO 14284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 00:35:11.215  INFO 14284 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 00:35:11.215  INFO 14284 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 00:35:11.334  INFO 14284 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 00:35:11.335  INFO 14284 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1026 ms
+2020-08-31 00:35:11.464  INFO 14284 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 00:35:11.506  INFO 14284 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 00:35:11.602  INFO 14284 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 00:35:11.667  INFO 14284 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 00:35:11.812  INFO 14284 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 00:35:11.823  INFO 14284 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 00:35:12.759  INFO 14284 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 00:35:12.770  INFO 14284 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:35:12.834  WARN 14284 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'timesheet2Application': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+2020-08-31 00:35:12.834  INFO 14284 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:35:12.838  INFO 14284 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 00:35:12.845  INFO 14284 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 00:35:12.848  INFO 14284 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-31 00:35:12.862  INFO 14284 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-31 00:35:12.876 ERROR 14284 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'timesheet2Application': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at tn.esprit.spring.Timesheet2Application.main(Timesheet2Application.java:37) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+	at org.springframework.util.Assert.isTrue(Assert.java:136) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.security.core.userdetails.User$UserBuilder.roles(User.java:438) ~[spring-security-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.roles(UserDetailsManagerConfigurer.java:184) ~[spring-security-config-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at tn.esprit.spring.Timesheet2Application.configureGlobal(Timesheet2Application.java:65) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_60]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:755) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 17 common frames omitted
+
+2020-08-31 00:35:39.356  INFO 15560 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 15560 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 00:35:39.360  INFO 15560 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 00:35:40.251  INFO 15560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 00:35:40.364  INFO 15560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101ms. Found 4 JPA repository interfaces.
+2020-08-31 00:35:40.909  INFO 15560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 00:35:40.916  INFO 15560 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 00:35:40.916  INFO 15560 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 00:35:41.933  INFO 15560 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 00:35:41.933  INFO 15560 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2516 ms
+2020-08-31 00:35:42.045  INFO 15560 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 00:35:42.078  INFO 15560 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 00:35:42.185  INFO 15560 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 00:35:42.264  INFO 15560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 00:35:42.410  INFO 15560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 00:35:42.419  INFO 15560 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 00:35:42.946  INFO 15560 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 00:35:42.952  INFO 15560 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:35:42.985  WARN 15560 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'timesheet2Application': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+2020-08-31 00:35:42.985  INFO 15560 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:35:42.987  INFO 15560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 00:35:43.395  INFO 15560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 00:35:43.397  INFO 15560 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-31 00:35:43.411  INFO 15560 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-31 00:35:43.425 ERROR 15560 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'timesheet2Application': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at tn.esprit.spring.Timesheet2Application.main(Timesheet2Application.java:37) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+	at org.springframework.util.Assert.isTrue(Assert.java:136) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.security.core.userdetails.User$UserBuilder.roles(User.java:438) ~[spring-security-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.roles(UserDetailsManagerConfigurer.java:184) ~[spring-security-config-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at tn.esprit.spring.Timesheet2Application.configureGlobal(Timesheet2Application.java:65) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_60]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:755) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 17 common frames omitted
+
+2020-08-31 00:36:43.349  INFO 18288 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 18288 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 00:36:43.353  INFO 18288 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 00:36:44.184  INFO 18288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 00:36:44.300  INFO 18288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 104ms. Found 4 JPA repository interfaces.
+2020-08-31 00:36:45.022  INFO 18288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 00:36:45.034  INFO 18288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 00:36:45.034  INFO 18288 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 00:36:45.263  INFO 18288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 00:36:45.264  INFO 18288 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1857 ms
+2020-08-31 00:36:45.505  INFO 18288 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 00:36:45.573  INFO 18288 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 00:36:45.766  INFO 18288 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 00:36:45.928  INFO 18288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 00:36:46.231  INFO 18288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 00:36:46.250  INFO 18288 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 00:36:46.848  INFO 18288 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 00:36:46.854  INFO 18288 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:36:48.059  WARN 18288 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-31 00:36:48.152  INFO 18288 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 00:36:48.461  INFO 18288 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63187d63, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a17dd6f, org.springframework.security.web.header.HeaderWriterFilter@d504137, org.springframework.security.web.csrf.CsrfFilter@40016ce1, org.springframework.security.web.authentication.logout.LogoutFilter@211a9647, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@69ba3f4e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6a6d1ff3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1ccdc7aa, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@30517a57, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60c96eb4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3db1ce78, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a536164, org.springframework.security.web.session.SessionManagementFilter@e4ca109, org.springframework.security.web.access.ExceptionTranslationFilter@1322b575, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@65d73bd]
+2020-08-31 00:36:48.593  INFO 18288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2020-08-31 00:36:48.594  INFO 18288 --- [main] tn.esprit.spring.Timesheet2Application   : Started Timesheet2Application in 5.732 seconds (JVM running for 6.368)
+2020-08-31 00:37:26.549  INFO 18288 --- [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 00:37:26.550  INFO 18288 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-31 00:37:26.556  INFO 18288 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-08-31 00:39:08.792  INFO 18288 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-08-31 00:39:08.796  INFO 18288 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 00:39:08.798  INFO 18288 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:39:08.801  INFO 18288 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 00:39:08.820  INFO 18288 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 00:39:12.840  INFO 18460 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 18460 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 00:39:12.842  INFO 18460 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 00:39:13.623  INFO 18460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 00:39:13.767  INFO 18460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129ms. Found 4 JPA repository interfaces.
+2020-08-31 00:39:14.532  INFO 18460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 00:39:14.545  INFO 18460 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 00:39:14.545  INFO 18460 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 00:39:14.758  INFO 18460 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 00:39:14.758  INFO 18460 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1889 ms
+2020-08-31 00:39:14.995  INFO 18460 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 00:39:15.065  INFO 18460 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 00:39:15.242  INFO 18460 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 00:39:15.410  INFO 18460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 00:39:15.713  INFO 18460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 00:39:15.731  INFO 18460 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 00:39:16.713  INFO 18460 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 00:39:16.719  INFO 18460 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:39:17.081  WARN 18460 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-31 00:39:17.172  INFO 18460 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 00:39:17.430  INFO 18460 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16ea0f22, org.springframework.security.web.context.SecurityContextPersistenceFilter@308e87a1, org.springframework.security.web.header.HeaderWriterFilter@211a9647, org.springframework.security.web.csrf.CsrfFilter@2ae5bd34, org.springframework.security.web.authentication.logout.LogoutFilter@456aa471, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@27dbaa33, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@14be750c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@60fc7f43, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@38f502fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c262f2f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40f1aa95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16e195cf, org.springframework.security.web.session.SessionManagementFilter@322b09da, org.springframework.security.web.access.ExceptionTranslationFilter@6aad919c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7996d0d4]
+2020-08-31 00:39:17.468  INFO 18460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2020-08-31 00:39:17.470  INFO 18460 --- [main] tn.esprit.spring.Timesheet2Application   : Started Timesheet2Application in 4.873 seconds (JVM running for 5.507)
+2020-08-31 00:39:32.706  INFO 18460 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 00:39:32.706  INFO 18460 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-31 00:39:32.713  INFO 18460 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-08-31 00:40:35.175  INFO 18460 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-08-31 00:40:35.179  INFO 18460 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 00:40:35.180  INFO 18460 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:40:35.183  INFO 18460 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 00:40:35.191  INFO 18460 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 00:40:43.241  INFO 18952 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 18952 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 00:40:43.243  INFO 18952 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 00:40:43.672  INFO 18952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 00:40:43.732  INFO 18952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54ms. Found 4 JPA repository interfaces.
+2020-08-31 00:40:44.221  INFO 18952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 00:40:44.233  INFO 18952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 00:40:44.234  INFO 18952 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 00:40:44.468  INFO 18952 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 00:40:44.468  INFO 18952 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1198 ms
+2020-08-31 00:40:44.731  INFO 18952 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 00:40:44.812  INFO 18952 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 00:40:45.005  INFO 18952 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 00:40:45.145  INFO 18952 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 00:40:45.427  INFO 18952 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 00:40:45.445  INFO 18952 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 00:40:46.593  INFO 18952 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 00:40:46.604  INFO 18952 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:40:46.675  WARN 18952 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'timesheet2Application': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+2020-08-31 00:40:46.676  INFO 18952 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:40:46.680  INFO 18952 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 00:40:46.689  INFO 18952 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 00:40:46.692  INFO 18952 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-31 00:40:46.707  INFO 18952 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-31 00:40:46.722 ERROR 18952 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'timesheet2Application': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.8.RELEASE.jar:2.2.8.RELEASE]
+	at tn.esprit.spring.Timesheet2Application.main(Timesheet2Application.java:41) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: ROLE_USER cannot start with ROLE_ (it is automatically added)
+	at org.springframework.util.Assert.isTrue(Assert.java:136) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.security.core.userdetails.User$UserBuilder.roles(User.java:438) ~[spring-security-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.roles(UserDetailsManagerConfigurer.java:184) ~[spring-security-config-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at tn.esprit.spring.Timesheet2Application.configureGlobal(Timesheet2Application.java:38) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_60]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:755) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 17 common frames omitted
+
+2020-08-31 00:41:41.074  INFO 19348 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 19348 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 00:41:41.079  INFO 19348 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 00:41:41.957  INFO 19348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 00:41:42.076  INFO 19348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106ms. Found 4 JPA repository interfaces.
+2020-08-31 00:41:42.848  INFO 19348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 00:41:42.861  INFO 19348 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 00:41:42.862  INFO 19348 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 00:41:43.079  INFO 19348 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 00:41:43.079  INFO 19348 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1939 ms
+2020-08-31 00:41:43.299  INFO 19348 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 00:41:43.361  INFO 19348 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 00:41:43.553  INFO 19348 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 00:41:43.726  INFO 19348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 00:41:43.914  INFO 19348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 00:41:43.923  INFO 19348 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 00:41:44.447  INFO 19348 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 00:41:44.453  INFO 19348 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:41:44.789  WARN 19348 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-31 00:41:44.869  INFO 19348 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 00:41:45.100  INFO 19348 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b791dca, org.springframework.security.web.context.SecurityContextPersistenceFilter@2964511, org.springframework.security.web.header.HeaderWriterFilter@65d73bd, org.springframework.security.web.csrf.CsrfFilter@3ef2b8e5, org.springframework.security.web.authentication.logout.LogoutFilter@7996d0d4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@26ffd2c0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@79ad1774, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@15ac02d5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@619c3546, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ea66c33, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@30517a57, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2af9a5ef, org.springframework.security.web.session.SessionManagementFilter@3ed7dd70, org.springframework.security.web.access.ExceptionTranslationFilter@701d2b59, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1f45db49]
+2020-08-31 00:41:45.140  INFO 19348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2020-08-31 00:41:45.141  INFO 19348 --- [main] tn.esprit.spring.Timesheet2Application   : Started Timesheet2Application in 4.7 seconds (JVM running for 5.396)
+2020-08-31 00:43:00.575  INFO 19348 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 00:43:00.576  INFO 19348 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-31 00:43:00.583  INFO 19348 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-08-31 00:44:59.834  INFO 19348 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-08-31 00:44:59.836  INFO 19348 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 00:44:59.838  INFO 19348 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:44:59.840  INFO 19348 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 00:44:59.845  INFO 19348 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 00:45:04.786  INFO 18180 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 18180 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 00:45:04.790  INFO 18180 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 00:45:05.686  INFO 18180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 00:45:05.801  INFO 18180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105ms. Found 4 JPA repository interfaces.
+2020-08-31 00:45:06.516  INFO 18180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 00:45:06.529  INFO 18180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 00:45:06.529  INFO 18180 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 00:45:06.745  INFO 18180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 00:45:06.745  INFO 18180 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1900 ms
+2020-08-31 00:45:06.975  INFO 18180 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 00:45:07.047  INFO 18180 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 00:45:07.245  INFO 18180 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 00:45:07.405  INFO 18180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 00:45:07.723  INFO 18180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 00:45:07.744  INFO 18180 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 00:45:08.294  INFO 18180 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 00:45:08.300  INFO 18180 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:45:08.650  WARN 18180 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-31 00:45:08.738  INFO 18180 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 00:45:09.046  INFO 18180 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27896d3b, org.springframework.security.web.context.SecurityContextPersistenceFilter@203765b2, org.springframework.security.web.header.HeaderWriterFilter@376af784, org.springframework.security.web.csrf.CsrfFilter@2aa6bbad, org.springframework.security.web.authentication.logout.LogoutFilter@677cc4e8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2b7774d5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3386c206, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3ed7dd70, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@21090c88, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b47b7f5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76a1146d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f3b13d0, org.springframework.security.web.session.SessionManagementFilter@6d0114c0, org.springframework.security.web.access.ExceptionTranslationFilter@6d815fb7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4276ad40]
+2020-08-31 00:45:09.130  INFO 18180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2020-08-31 00:45:09.133  INFO 18180 --- [main] tn.esprit.spring.Timesheet2Application   : Started Timesheet2Application in 4.859 seconds (JVM running for 5.493)
+2020-08-31 00:45:23.804  INFO 18180 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 00:45:23.805  INFO 18180 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-31 00:45:23.811  INFO 18180 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-08-31 00:47:10.717  INFO 18180 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-08-31 00:47:10.719  INFO 18180 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 00:47:10.720  INFO 18180 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:47:10.722  INFO 18180 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 00:47:10.726  INFO 18180 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 00:47:15.507  INFO 10288 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 10288 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 00:47:15.511  INFO 10288 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 00:47:16.335  INFO 10288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 00:47:16.448  INFO 10288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101ms. Found 4 JPA repository interfaces.
+2020-08-31 00:47:17.132  INFO 10288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 00:47:17.145  INFO 10288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 00:47:17.145  INFO 10288 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 00:47:17.390  INFO 10288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 00:47:17.391  INFO 10288 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1823 ms
+2020-08-31 00:47:17.608  INFO 10288 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 00:47:17.672  INFO 10288 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 00:47:17.855  INFO 10288 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 00:47:17.996  INFO 10288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 00:47:18.218  INFO 10288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 00:47:18.228  INFO 10288 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 00:47:18.756  INFO 10288 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 00:47:18.761  INFO 10288 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:47:19.097  WARN 10288 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-31 00:47:19.188  INFO 10288 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 00:47:19.401  INFO 10288 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7e2bd5e6, org.springframework.security.web.context.SecurityContextPersistenceFilter@6598caab, org.springframework.security.web.header.HeaderWriterFilter@667797f, org.springframework.security.web.csrf.CsrfFilter@10dfa7ef, org.springframework.security.web.authentication.logout.LogoutFilter@5f0677f3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@a9a8ec3, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5cdf221a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@76a1146d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4b6b5352, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52ca0ad4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44fb6ebd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ef1c3f7, org.springframework.security.web.session.SessionManagementFilter@46ea78f0, org.springframework.security.web.access.ExceptionTranslationFilter@14b95942, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@605c7a9e]
+2020-08-31 00:47:19.440  INFO 10288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2020-08-31 00:47:19.442  INFO 10288 --- [main] tn.esprit.spring.Timesheet2Application   : Started Timesheet2Application in 4.43 seconds (JVM running for 5.217)
+2020-08-31 00:47:33.155  INFO 10288 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 00:47:33.156  INFO 10288 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-31 00:47:33.168  INFO 10288 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-08-31 00:56:43.277  INFO 10288 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-08-31 00:56:43.281  INFO 10288 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 00:56:43.282  INFO 10288 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:56:43.353  INFO 10288 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 00:56:43.398  INFO 10288 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 00:56:51.400  INFO 19388 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 19388 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 00:56:51.402  INFO 19388 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 00:56:52.004  INFO 19388 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 00:56:52.120  INFO 19388 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105ms. Found 4 JPA repository interfaces.
+2020-08-31 00:56:52.968  INFO 19388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 00:56:53.141  INFO 19388 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 00:56:53.141  INFO 19388 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 00:56:53.386  INFO 19388 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 00:56:53.386  INFO 19388 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1957 ms
+2020-08-31 00:56:53.682  INFO 19388 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 00:56:53.758  INFO 19388 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 00:56:53.983  INFO 19388 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 00:56:54.140  INFO 19388 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 00:56:54.939  INFO 19388 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 00:56:54.958  INFO 19388 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 00:56:57.793  INFO 19388 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 00:56:57.798  INFO 19388 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 00:56:58.225  WARN 19388 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-31 00:56:58.354  INFO 19388 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 00:56:58.586  INFO 19388 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f849027, org.springframework.security.web.context.SecurityContextPersistenceFilter@67c21bf, org.springframework.security.web.header.HeaderWriterFilter@752973de, org.springframework.security.web.csrf.CsrfFilter@1657b017, org.springframework.security.web.authentication.logout.LogoutFilter@62cd562d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4e2cdc51, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@77b71c9, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4a9869a8, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4656fcc5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79f1e22e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d17914a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75e0a54c, org.springframework.security.web.session.SessionManagementFilter@793cef95, org.springframework.security.web.access.ExceptionTranslationFilter@3b021664, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@36d697ab]
+2020-08-31 00:56:58.661  INFO 19388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2020-08-31 00:56:58.663  INFO 19388 --- [main] tn.esprit.spring.Timesheet2Application   : Started Timesheet2Application in 7.514 seconds (JVM running for 8.213)
+2020-08-31 00:57:04.785  INFO 19388 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 00:57:04.785  INFO 19388 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-31 00:57:04.791  INFO 19388 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-08-31 01:00:13.677  INFO 19388 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-08-31 01:00:13.680  INFO 19388 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 01:00:13.681  INFO 19388 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 01:00:13.683  INFO 19388 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 01:00:13.690  INFO 19388 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 01:00:18.668  INFO 9932 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 9932 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 01:00:18.671  INFO 9932 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 01:00:19.279  INFO 9932 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 01:00:19.343  INFO 9932 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58ms. Found 4 JPA repository interfaces.
+2020-08-31 01:00:19.721  INFO 9932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 01:00:19.801  INFO 9932 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 01:00:19.801  INFO 9932 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 01:00:19.919  INFO 9932 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 01:00:19.920  INFO 9932 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1211 ms
+2020-08-31 01:00:20.096  INFO 9932 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 01:00:20.175  INFO 9932 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 01:00:20.358  INFO 9932 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 01:00:20.497  INFO 9932 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 01:00:21.153  INFO 9932 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 01:00:21.172  INFO 9932 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 01:00:22.370  INFO 9932 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 01:00:22.381  INFO 9932 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 01:00:23.122  WARN 9932 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-31 01:00:23.345  INFO 9932 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 01:00:23.636  INFO 9932 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2342f1ff, org.springframework.security.web.context.SecurityContextPersistenceFilter@21c75084, org.springframework.security.web.header.HeaderWriterFilter@9f9146d, org.springframework.security.web.csrf.CsrfFilter@7afbf2a0, org.springframework.security.web.authentication.logout.LogoutFilter@6dded900, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@467ef400, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@506aa618, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3303e89e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5d717f19, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75527e36, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e050be1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@cec590c, org.springframework.security.web.session.SessionManagementFilter@45e7bb79, org.springframework.security.web.access.ExceptionTranslationFilter@48a46b0f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69e2fe3b]
+2020-08-31 01:00:23.682  INFO 9932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2020-08-31 01:00:23.684  INFO 9932 --- [main] tn.esprit.spring.Timesheet2Application   : Started Timesheet2Application in 5.298 seconds (JVM running for 5.929)
+2020-08-31 01:00:47.762  INFO 9932 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 01:00:47.763  INFO 9932 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-31 01:00:47.848  INFO 9932 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-08-31 01:06:15.440  INFO 9932 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-08-31 01:06:15.442  INFO 9932 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 01:06:15.443  INFO 9932 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 01:06:15.445  INFO 9932 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 01:06:15.450  INFO 9932 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 01:06:22.003  INFO 1548 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 1548 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 01:06:22.009  INFO 1548 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 01:06:22.886  INFO 1548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 01:06:23.014  INFO 1548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116ms. Found 4 JPA repository interfaces.
+2020-08-31 01:06:23.773  INFO 1548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 01:06:23.785  INFO 1548 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 01:06:23.786  INFO 1548 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 01:06:24.102  INFO 1548 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 01:06:24.102  INFO 1548 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2033 ms
+2020-08-31 01:06:24.326  INFO 1548 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 01:06:24.404  INFO 1548 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 01:06:24.592  INFO 1548 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 01:06:24.732  INFO 1548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 01:06:25.017  INFO 1548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 01:06:25.036  INFO 1548 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 01:06:25.729  INFO 1548 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 01:06:25.735  INFO 1548 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 01:06:26.075  WARN 1548 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-31 01:06:26.154  INFO 1548 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 01:06:26.373  INFO 1548 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14be750c, org.springframework.security.web.context.SecurityContextPersistenceFilter@46b5f061, org.springframework.security.web.header.HeaderWriterFilter@2cd3fc29, org.springframework.security.web.csrf.CsrfFilter@71e2c6d8, org.springframework.security.web.authentication.logout.LogoutFilter@6f867b0c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@308e87a1, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7afbf2a0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@58882a93, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4efb13f1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@108b121f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5822ecda, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15e08615, org.springframework.security.web.session.SessionManagementFilter@3513d214, org.springframework.security.web.access.ExceptionTranslationFilter@236861da, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68e24e7]
+2020-08-31 01:06:26.415  INFO 1548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2020-08-31 01:06:26.416  INFO 1548 --- [main] tn.esprit.spring.Timesheet2Application   : Started Timesheet2Application in 4.813 seconds (JVM running for 5.479)
+2020-08-31 01:06:46.819  INFO 1548 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 01:06:46.820  INFO 1548 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-31 01:06:46.827  INFO 1548 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-08-31 01:10:07.965  INFO 1548 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-08-31 01:10:07.969  INFO 1548 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 01:10:07.971  INFO 1548 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 01:10:07.975  INFO 1548 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 01:10:07.985  INFO 1548 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 01:10:13.180  INFO 3224 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 3224 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 01:10:13.182  INFO 3224 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 01:10:13.601  INFO 3224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 01:10:13.664  INFO 3224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56ms. Found 4 JPA repository interfaces.
+2020-08-31 01:10:14.008  INFO 3224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 01:10:14.015  INFO 3224 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 01:10:14.015  INFO 3224 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 01:10:14.175  INFO 3224 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 01:10:14.175  INFO 3224 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 967 ms
+2020-08-31 01:10:14.288  INFO 3224 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 01:10:14.322  INFO 3224 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 01:10:14.505  INFO 3224 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 01:10:14.651  INFO 3224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 01:10:15.022  INFO 3224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 01:10:15.041  INFO 3224 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 01:10:16.743  INFO 3224 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 01:10:16.754  INFO 3224 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 01:10:17.440  WARN 3224 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-31 01:10:17.647  INFO 3224 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 01:10:17.965  INFO 3224 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79f1e22e, org.springframework.security.web.context.SecurityContextPersistenceFilter@340c5fb6, org.springframework.security.web.header.HeaderWriterFilter@c732e1c, org.springframework.security.web.csrf.CsrfFilter@677cc4e8, org.springframework.security.web.authentication.logout.LogoutFilter@bd4ee01, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7e0986c9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@56835f2f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6903ed0e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@752973de, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45d389f2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7bb4ed71, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e154848, org.springframework.security.web.session.SessionManagementFilter@56c42964, org.springframework.security.web.access.ExceptionTranslationFilter@17884d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@44864536]
+2020-08-31 01:10:18.007  INFO 3224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2020-08-31 01:10:18.009  INFO 3224 --- [main] tn.esprit.spring.Timesheet2Application   : Started Timesheet2Application in 5.075 seconds (JVM running for 5.745)
+2020-08-31 01:10:50.717  INFO 3224 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 01:10:50.718  INFO 3224 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-31 01:10:50.724  INFO 3224 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-08-31 11:52:12.477  INFO 14912 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 14912 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 11:52:12.568  INFO 14912 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 11:52:13.650  INFO 14912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 11:52:13.775  INFO 14912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111ms. Found 4 JPA repository interfaces.
+2020-08-31 11:52:14.613  INFO 14912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 11:52:14.627  INFO 14912 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 11:52:14.628  INFO 14912 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 11:52:14.821  INFO 14912 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 11:52:14.822  INFO 14912 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2168 ms
+2020-08-31 11:52:15.063  INFO 14912 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 11:52:15.134  INFO 14912 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 11:52:15.345  INFO 14912 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 11:52:15.573  INFO 14912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 11:52:16.139  INFO 14912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 11:52:16.150  INFO 14912 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 11:52:17.274  INFO 14912 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 11:52:17.394  INFO 14912 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 11:52:19.688  WARN 14912 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-31 11:52:20.126  INFO 14912 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 11:52:21.325  INFO 14912 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a7ebe07, org.springframework.security.web.context.SecurityContextPersistenceFilter@7e2bc2f4, org.springframework.security.web.header.HeaderWriterFilter@14be750c, org.springframework.security.web.csrf.CsrfFilter@211a9647, org.springframework.security.web.authentication.logout.LogoutFilter@18715bb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@74c7522c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@22c8ee48, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6e93b0e7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@612af486, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76af51d6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4cfcac13, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5eeee124, org.springframework.security.web.session.SessionManagementFilter@15e08615, org.springframework.security.web.access.ExceptionTranslationFilter@40f1aa95, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@67afe909]
+2020-08-31 11:52:21.570  INFO 14912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2020-08-31 11:52:21.572  INFO 14912 --- [main] tn.esprit.spring.Timesheet2Application   : Started Timesheet2Application in 9.586 seconds (JVM running for 10.217)
+2020-08-31 11:53:18.178  INFO 14912 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 11:53:18.179  INFO 14912 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-31 11:53:18.223  INFO 14912 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 44 ms
+2020-08-31 11:58:32.913  INFO 2800 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 2800 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 11:58:32.915  INFO 2800 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 11:58:33.342  INFO 2800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 11:58:33.397  INFO 2800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 4 JPA repository interfaces.
+2020-08-31 11:58:33.741  INFO 2800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 11:58:33.747  INFO 2800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 11:58:33.747  INFO 2800 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 11:58:33.861  INFO 2800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 11:58:34.919  INFO 2800 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1975 ms
+2020-08-31 11:58:35.161  INFO 2800 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 11:58:35.240  INFO 2800 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 11:58:35.442  INFO 2800 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 11:58:35.680  INFO 2800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 11:58:36.068  INFO 2800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 11:58:36.087  INFO 2800 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 11:58:37.149  INFO 2800 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 11:58:37.160  INFO 2800 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 11:58:37.854  WARN 2800 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-31 11:58:37.954  INFO 2800 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 11:58:38.308  INFO 2800 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@48cf8414, org.springframework.security.web.context.SecurityContextPersistenceFilter@57c6feea, org.springframework.security.web.header.HeaderWriterFilter@3db1ce78, org.springframework.security.web.csrf.CsrfFilter@1322b575, org.springframework.security.web.authentication.logout.LogoutFilter@40f1aa95, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1a536164, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@45d389f2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@27dbaa33, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@fcf9525, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39c7fb0b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@340c5fb6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15d65fcf, org.springframework.security.web.session.SessionManagementFilter@6a6d1ff3, org.springframework.security.web.access.ExceptionTranslationFilter@2b3f7704, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@30517a57]
+2020-08-31 11:58:38.361  INFO 2800 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-31 11:58:38.519  INFO 2800 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-31 11:58:38.526 ERROR 2800 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8085 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8085 or configure this application to listen on another port.
+
+2020-08-31 11:58:38.529  INFO 2800 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 11:58:38.531  INFO 2800 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 11:58:38.533  INFO 2800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 11:58:38.570  INFO 2800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 11:58:43.022  INFO 14912 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-08-31 11:58:43.025  INFO 14912 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 11:58:43.026  INFO 14912 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 11:58:43.029  INFO 14912 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 11:58:43.037  INFO 14912 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 11:58:54.257  INFO 12012 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 12012 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 11:58:54.259  INFO 12012 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 11:58:54.706  INFO 12012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 11:58:54.761  INFO 12012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 4 JPA repository interfaces.
+2020-08-31 11:58:55.326  INFO 12012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 11:58:55.338  INFO 12012 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 11:58:55.338  INFO 12012 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 11:58:55.830  INFO 12012 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 11:58:55.830  INFO 12012 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1535 ms
+2020-08-31 11:58:56.041  INFO 12012 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 11:58:56.104  INFO 12012 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 11:58:56.278  INFO 12012 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 11:58:56.413  INFO 12012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 11:58:56.683  INFO 12012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 11:58:56.701  INFO 12012 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 11:58:57.690  INFO 12012 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 11:58:57.700  INFO 12012 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 11:58:58.312  WARN 12012 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-31 11:58:58.403  INFO 12012 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 11:58:58.620  INFO 12012 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d7b2319, org.springframework.security.web.context.SecurityContextPersistenceFilter@6e5f5478, org.springframework.security.web.header.HeaderWriterFilter@2321e482, org.springframework.security.web.csrf.CsrfFilter@19dac2d6, org.springframework.security.web.authentication.logout.LogoutFilter@6ea66c33, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6fc1a8f6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1570cad0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@acb5508, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@33a47707, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ef2b8e5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3303e89e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f45db49, org.springframework.security.web.session.SessionManagementFilter@13fe5bb7, org.springframework.security.web.access.ExceptionTranslationFilter@7845b21a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1cc41b77]
+2020-08-31 11:58:59.271  INFO 12012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2020-08-31 11:58:59.273  INFO 12012 --- [main] tn.esprit.spring.Timesheet2Application   : Started Timesheet2Application in 5.259 seconds (JVM running for 5.863)
+2020-08-31 11:59:34.575  INFO 12012 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 11:59:34.576  INFO 12012 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-31 11:59:34.581  INFO 12012 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-08-31 12:03:27.390  INFO 9620 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 9620 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 12:03:27.394  INFO 9620 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 12:03:28.282  INFO 9620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 12:03:28.389  INFO 9620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95ms. Found 4 JPA repository interfaces.
+2020-08-31 12:03:29.081  INFO 9620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 12:03:29.093  INFO 9620 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 12:03:29.094  INFO 9620 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 12:03:29.310  INFO 9620 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 12:03:29.311  INFO 9620 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1852 ms
+2020-08-31 12:03:29.439  INFO 9620 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 12:03:29.471  INFO 9620 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 12:03:29.560  INFO 9620 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 12:03:29.628  INFO 9620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 12:03:29.769  INFO 9620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 12:03:29.779  INFO 9620 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 12:03:30.289  INFO 9620 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 12:03:30.295  INFO 9620 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 12:03:30.620  WARN 9620 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-31 12:03:30.711  INFO 9620 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 12:03:30.921  INFO 9620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@701d2b59, org.springframework.security.web.context.SecurityContextPersistenceFilter@a9a8ec3, org.springframework.security.web.header.HeaderWriterFilter@76596288, org.springframework.security.web.csrf.CsrfFilter@141aba65, org.springframework.security.web.authentication.logout.LogoutFilter@60c96eb4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5d717f19, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7e2bd5e6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1999149e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3303e89e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40016ce1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f86f9cf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65d73bd, org.springframework.security.web.session.SessionManagementFilter@51af8049, org.springframework.security.web.access.ExceptionTranslationFilter@d16209e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2321e482]
+2020-08-31 12:03:30.955  INFO 9620 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-31 12:03:30.959  INFO 9620 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-31 12:03:30.962 ERROR 9620 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8085 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8085 or configure this application to listen on another port.
+
+2020-08-31 12:03:30.964  INFO 9620 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 12:03:30.965  INFO 9620 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 12:03:30.966  INFO 9620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 12:03:30.970  INFO 9620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 12:03:34.808  INFO 12012 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-08-31 12:03:34.810  INFO 12012 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 12:03:34.811  INFO 12012 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 12:03:34.813  INFO 12012 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 12:03:34.818  INFO 12012 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 12:03:45.295  INFO 15292 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 15292 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 12:03:45.297  INFO 15292 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 12:03:46.106  INFO 15292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 12:03:46.218  INFO 15292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100ms. Found 4 JPA repository interfaces.
+2020-08-31 12:03:46.889  INFO 15292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 12:03:46.901  INFO 15292 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 12:03:46.901  INFO 15292 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 12:03:47.109  INFO 15292 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 12:03:47.110  INFO 15292 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1773 ms
+2020-08-31 12:03:47.325  INFO 15292 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 12:03:47.387  INFO 15292 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 12:03:47.562  INFO 15292 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 12:03:47.698  INFO 15292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 12:03:47.968  INFO 15292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 12:03:47.986  INFO 15292 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 12:03:48.917  INFO 15292 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 12:03:48.923  INFO 15292 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 12:03:49.255  WARN 15292 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-31 12:03:49.332  INFO 15292 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 12:03:49.540  INFO 15292 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67b5e613, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f93f4c, org.springframework.security.web.header.HeaderWriterFilter@76af51d6, org.springframework.security.web.csrf.CsrfFilter@c262f2f, org.springframework.security.web.authentication.logout.LogoutFilter@3303e89e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@30ffb2a6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4276ad40, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6fc1a8f6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2a7ebe07, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@456aa471, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@467ef400, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3095d401, org.springframework.security.web.session.SessionManagementFilter@1930a804, org.springframework.security.web.access.ExceptionTranslationFilter@7e2bc2f4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@16e195cf]
+2020-08-31 12:03:49.579  INFO 15292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2020-08-31 12:03:49.581  INFO 15292 --- [main] tn.esprit.spring.Timesheet2Application   : Started Timesheet2Application in 4.526 seconds (JVM running for 5.139)
+2020-08-31 12:03:56.011  INFO 15292 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 12:03:56.011  INFO 15292 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-31 12:03:56.017  INFO 15292 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-08-31 12:09:13.548  INFO 15292 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-08-31 12:09:13.551  INFO 15292 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 12:09:13.552  INFO 15292 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 12:09:13.576  INFO 15292 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 12:09:13.603  INFO 15292 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 12:09:20.250  INFO 9096 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 9096 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 12:09:20.252  INFO 9096 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 12:09:20.670  INFO 9096 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 12:09:20.732  INFO 9096 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56ms. Found 4 JPA repository interfaces.
+2020-08-31 12:09:22.059  INFO 9096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 12:09:22.066  INFO 9096 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 12:09:22.066  INFO 9096 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 12:09:22.180  INFO 9096 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 12:09:22.180  INFO 9096 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1900 ms
+2020-08-31 12:09:22.293  INFO 9096 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 12:09:22.324  INFO 9096 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 12:09:22.411  INFO 9096 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 12:09:22.479  INFO 9096 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 12:09:23.541  INFO 9096 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 12:09:23.559  INFO 9096 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 12:09:25.210  INFO 9096 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 12:09:25.222  INFO 9096 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 12:09:26.016  WARN 9096 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-31 12:09:26.159  INFO 9096 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 12:09:26.567  INFO 9096 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3095d401, org.springframework.security.web.context.SecurityContextPersistenceFilter@456aa471, org.springframework.security.web.header.HeaderWriterFilter@1930a804, org.springframework.security.web.csrf.CsrfFilter@11148dc2, org.springframework.security.web.authentication.logout.LogoutFilter@1570cad0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3d033453, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5fb07347, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2037f12b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5eeee124, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27afbf14, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4276ad40, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@687a0e40, org.springframework.security.web.session.SessionManagementFilter@7f93f4c, org.springframework.security.web.access.ExceptionTranslationFilter@76af51d6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@74c7522c]
+2020-08-31 12:09:26.678  INFO 9096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2020-08-31 12:09:26.680  INFO 9096 --- [main] tn.esprit.spring.Timesheet2Application   : Started Timesheet2Application in 6.679 seconds (JVM running for 7.708)
+2020-08-31 12:09:43.987  INFO 9096 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 12:09:43.988  INFO 9096 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-31 12:09:43.999  INFO 9096 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-08-31 12:16:41.463  INFO 9096 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-08-31 12:16:41.465  INFO 9096 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 12:16:41.466  INFO 9096 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 12:16:41.469  INFO 9096 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 12:16:41.473  INFO 9096 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 12:16:45.114  INFO 12904 --- [main] tn.esprit.spring.Timesheet2Application   : Starting Timesheet2Application on DESKTOP-722B4BO with PID 12904 (C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2\target\classes started by USER in C:\Users\USER\Documents\workspace-sts-3.9.4.RELEASE\Timesheet2)
+2020-08-31 12:16:45.116  INFO 12904 --- [main] tn.esprit.spring.Timesheet2Application   : No active profile set, falling back to default profiles: default
+2020-08-31 12:16:45.541  INFO 12904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-31 12:16:45.603  INFO 12904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56ms. Found 4 JPA repository interfaces.
+2020-08-31 12:16:45.949  INFO 12904 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2020-08-31 12:16:45.955  INFO 12904 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 12:16:45.956  INFO 12904 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-31 12:16:46.077  INFO 12904 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 12:16:46.077  INFO 12904 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 935 ms
+2020-08-31 12:16:46.190  INFO 12904 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 12:16:46.223  INFO 12904 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-31 12:16:46.310  INFO 12904 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 12:16:46.381  INFO 12904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 12:16:46.576  INFO 12904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 12:16:46.586  INFO 12904 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-08-31 12:16:47.356  INFO 12904 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 12:16:47.367  INFO 12904 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 12:16:48.053  WARN 12904 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-31 12:16:48.824  INFO 12904 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 12:16:49.240  INFO 12904 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@368424db, org.springframework.security.web.context.SecurityContextPersistenceFilter@5ab63a04, org.springframework.security.web.header.HeaderWriterFilter@1a17dd6f, org.springframework.security.web.csrf.CsrfFilter@506aa618, org.springframework.security.web.authentication.logout.LogoutFilter@308e87a1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@49889154, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@39c7fb0b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@44864536, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3df77dfa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c6bba7d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57c6feea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@455f4483, org.springframework.security.web.session.SessionManagementFilter@60c96eb4, org.springframework.security.web.access.ExceptionTranslationFilter@e4ca109, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2964511]
+2020-08-31 12:16:49.311  INFO 12904 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2020-08-31 12:16:49.314  INFO 12904 --- [main] tn.esprit.spring.Timesheet2Application   : Started Timesheet2Application in 4.442 seconds (JVM running for 5.051)
+2020-08-31 12:17:05.987  INFO 12904 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 12:17:05.987  INFO 12904 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-31 12:17:05.993  INFO 12904 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
